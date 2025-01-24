@@ -4,9 +4,9 @@ export const SignUpForm = () => {
   return (
     <>
       <form className="sign-up-form">
-        <label htmlFor="email">Email</label>
+        <label htmlFor="email">Email address</label>
         <input type="email" placeholder="email@company.com" />
-        <button type="submit">Subscribe</button>
+        <button type="submit">Subscribe to monthly newslatter</button>
       </form>
     </>
   );

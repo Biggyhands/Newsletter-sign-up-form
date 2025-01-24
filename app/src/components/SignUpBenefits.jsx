@@ -2,7 +2,7 @@ import React from "react";
 import iconList from "../assets/images/icon-list.svg";
 
 export default function SignUpBenefits() {
-  const icon = <img src={iconList} alt="Icon list" />;
+  const icon = <img className="benefits-img" src={iconList} alt="Icon list" />;
   return (
     <ul className="sign-up-benefits-container">
       <li>
@@ -11,7 +11,7 @@ export default function SignUpBenefits() {
       </li>
       <li>
         {icon}
-        Measuring to ensure updates are a success{" "}
+        Measuring to ensure updates are a success
       </li>
       <li>
         {icon}
