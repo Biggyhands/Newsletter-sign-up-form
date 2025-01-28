@@ -19,6 +19,7 @@ export const SignUpPicture = () => {
   return (
     <>
       <img
+        className="card-img"
         src={
           isMobileView ? signUpIllustrationMobile : signUpIllustrationDesktop
         }
