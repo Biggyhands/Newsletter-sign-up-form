@@ -55,6 +55,7 @@ body {
 }
 .sign-up-info-container p {
   font-size: 16px;
+  color: var(--color-neutral-dark-slate-grey);
 }
 .sign-up-benefits-container {
   height: 20%;
@@ -69,6 +70,7 @@ body {
 
 .sign-up-benefits-container li {
   padding-bottom: 20px;
+  color: var(--color-neutral-dark-slate-grey);
 }
 
 .benefits-img {
@@ -89,9 +91,11 @@ body {
   font-size: 12px;
   font-weight: bold;
   color: var(--color-neutral-dark-slate-grey);
+  display: flex;
+  justify-content: space-between;
 }
 
-.sign-up-form input {
+.input-form {
   width: 100%;
   height: 50px;
   border: solid 1px var(--color-neutral-grey);
@@ -111,6 +115,7 @@ body {
   border: solid 1px var(--color-neutral-dark-slate-grey);
   border-radius: 10px;
   padding: 10px;
+  font-weight: bold;
   margin: 10px 0;
   background-color: var(--color-neutral-dark-slate-grey);
   color: var(--color-neutral-white);
@@ -129,8 +134,99 @@ body {
   border-color: hsl(4, 72%, 60%);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
+
+.error-state {
+  color: var(--color-primary-tomato);
+}
+
+.error-input-state {
+  background-color: #ffe8e6;
+  border-color: var(--color-primary-tomato);
+}
+
+.error-input-state::placeholder {
+  color: hsl(4, 63%, 58%);
+}
+
+.error-span-display {
+  display: none;
+}
 /**/
 
+/*Success Card Container*/
+
+.success-message-container {
+  height: 842px;
+  width: 375px;
+  background-color: var(--color-neutral-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.success-message-info-container {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.success-message-info {
+  display: flex;
+  flex-direction: column;
+  height: 60%;
+  justify-content: space-evenly;
+}
+.success-message-info img {
+  width: 70px;
+  height: 70px;
+}
+
+.success-message-info h1 {
+  font-size: 40px;
+  color: var(--color-neutral-dark-slate-grey);
+}
+
+.success-message-info p {
+  font-size: 16px;
+  color: var(--color-neutral-dark-slate-grey);
+  font-weight: 450;
+}
+
+.success-message-container button {
+  width: 100%;
+  height: 50px;
+  border: solid 1px var(--color-neutral-dark-slate-grey);
+  border-radius: 10px;
+  padding: 10px;
+  font-weight: bold;
+  margin: 10px 0;
+  background-color: var(--color-neutral-dark-slate-grey);
+  color: var(--color-neutral-white);
+}
+
+.success-message-container button:hover {
+  background-color: var(--color-primary-tomato);
+  color: var(--color-neutral-white);
+  border-color: var(--color-primary-tomato);
+  cursor: pointer;
+}
+
+.success-message-container button:active {
+  transform: translateY(2px);
+  background-color: hsl(4, 72%, 60%);
+  border-color: hsl(4, 72%, 60%);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.email-success {
+  color: var(--color-neutral-dark-slate-grey);
+  font-weight: bold;
+}
+
+/**/
 /*----media queries----*/
 
 /*375*/
@@ -139,6 +235,11 @@ body {
   .sign-up-card-container {
     width: 100vw;
     height: 100vh;
+  }
+
+  .success-message-container {
+    height: 842px;
+    width: 375px;
   }
 }
 
@@ -168,13 +269,18 @@ body {
   .card-img {
     width: 425px;
   }
+
+  .success-message-container {
+    height: 842px;
+    width: 425px;
+  }
 }
 /*768*/
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .sign-up-card-container {
     height: 500px;
-    width: 700px;
+    width: 725px;
     border-radius: 25px;
     display: flex;
     flex-direction: row-reverse;
@@ -201,18 +307,228 @@ body {
   .sign-up-benefits-container li {
     padding-bottom: 10px;
   }
+
+  .sign-up-form input {
+    width: 96%;
+    height: 50px;
+  }
+
+  .sign-up-form button {
+    width: 96%;
+    height: 50px;
+  }
+
+  .error-state {
+    color: var(--color-primary-tomato);
+    position: relative;
+    right: 16px;
+  }
+
+  .success-message-container {
+    height: 470px;
+    width: 450px;
+    border-radius: 25px;
+  }
+
+  .success-message-info-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px;
+  }
+
+  .success-message-info {
+    height: 70%;
+    justify-content: flex-start;
+  }
+
+  .success-message-info img {
+    width: 60px;
+    height: 60px;
+    margin: 20px 0 20px 0px;
+  }
+  .success-message-info h1 {
+    margin: 20px 0 20px 0px;
+    font-size: 42px;
+    font-weight: 800;
+  }
+
+  .success-message-container button {
+    width: 98%;
+  }
 }
 
-/*1440*/
-@media (min-width: 1440px) {
+/*1024*/
+
+@media (min-width: 1024px) and (max-width: 1439px) {
   .sign-up-card-container {
-    height: 650px;
-    width: 900px;
+    height: 600px;
+    width: 860px;
     border-radius: 10px;
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
     border-radius: 30px;
+  }
+
+  .sign-up-info-container {
+    width: 420px;
+    height: 440px;
+  }
+
+  .sign-up-benefits-container li {
+    padding-bottom: 10px;
+  }
+
+  .sign-up-info-container h1 {
+    position: relative;
+    right: 18px;
+    font-size: 50px;
+  }
+
+  .sign-up-form input {
+    width: 96%;
+    height: 50px;
+  }
+
+  .sign-up-form button {
+    width: 96%;
+    height: 50px;
+  }
+
+  .card-img {
+    width: 400px;
+    height: 600px;
+    padding-left: 20px;
+  }
+  .error-state {
+    color: var(--color-primary-tomato);
+    position: relative;
+    right: 16px;
+  }
+
+  .success-message-container {
+    height: 470px;
+    width: 450px;
+    border-radius: 25px;
+  }
+
+  .success-message-info-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px;
+  }
+
+  .success-message-info {
+    height: 70%;
+    justify-content: flex-start;
+  }
+
+  .success-message-info img {
+    width: 60px;
+    height: 60px;
+    margin: 20px 0 20px 0px;
+  }
+  .success-message-info h1 {
+    margin: 20px 0 20px 0px;
+    font-size: 42px;
+    font-weight: 800;
+  }
+
+  .success-message-container button {
+    width: 98%;
+  }
+}
+
+/*1440*/
+@media (min-width: 1440px) {
+  .sign-up-card-container {
+    height: 600px;
+    width: 840px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+  }
+
+  .sign-up-info-container {
+    width: 390px;
+    height: 440px;
+    padding: 0 20px;
+  }
+
+  .sign-up-benefits-container li {
+    padding-bottom: 10px;
+  }
+
+  .sign-up-info-container h1 {
+    position: relative;
+    right: 20px;
+    font-size: 50px;
+  }
+
+  .sign-up-form input {
+    width: 96%;
+    height: 50px;
+  }
+
+  .sign-up-form button {
+    width: 96%;
+    height: 50px;
+  }
+
+  .card-img {
+    width: 400px;
+    height: 600px;
+    padding-left: 20px;
+  }
+  .error-state {
+    color: var(--color-primary-tomato);
+    position: relative;
+    right: 16px;
+  }
+
+  .success-message-container {
+    height: 500px;
+    width: 421px;
+    border-radius: 25px;
+    padding: 0px 28px;
+  }
+
+  .success-message-info-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px;
+  }
+
+  .success-message-info {
+    height: 70%;
+    justify-content: flex-start;
+  }
+
+  .success-message-info img {
+    width: 60px;
+    height: 60px;
+    margin: 20px 0 20px 0px;
+  }
+  .success-message-info h1 {
+    margin: 20px 0 20px 0px;
+    font-size: 42px;
+    font-weight: 800;
+  }
+
+  .success-message-container button {
+    width: 98%;
   }
 }
