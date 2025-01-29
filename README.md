@@ -44,12 +44,13 @@ This project implements a newsletter signup form with a responsive design and ba
 **Demo**
 
 
-**sign up card*
+**sign up card**
 
 ![image](https://github.com/user-attachments/assets/a605154d-94bc-44b8-9091-5c5274b26888)
 
 
 
-**Success message*
+**Success message**
 
-![image](https://github.com/user-attachments/assets/e7e4c4f4-6e5f-42ca-89bb-b2f6fa62fa2d)
+![image](https://github.com/user-attachments/assets/f79c79ab-bfb4-41e2-ab5d-782ea958e090)
+
