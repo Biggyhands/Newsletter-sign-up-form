@@ -40,13 +40,17 @@ This project implements a newsletter signup form with a responsive design and ba
 3. Install dependencies: `npm install`
 4. Run the application: `npm start`
 
-   
 **Demo**
+-   **deploy:** https://clinquant-centaur-b5f4a1.netlify.app/
 
+https://github.com/user-attachments/assets/55e89eef-3e54-4c7b-a480-5baa189febb6
 
 **sign up card**
 
 ![image](https://github.com/user-attachments/assets/a605154d-94bc-44b8-9091-5c5274b26888)
+
+
+
 
 
 
