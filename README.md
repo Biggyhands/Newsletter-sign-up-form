@@ -36,7 +36,7 @@ This project implements a newsletter signup form with a responsive design and ba
   **Instructions to Run the Project:**
 
 1. Clone the repository: `git clone <repository-URL>`
-2. Navigate to the project directory: `cd pokemon-app`
+2. Navigate to the project directory: `cd app`
 3. Install dependencies: `npm install`
 4. Run the application: `npm start`
 
