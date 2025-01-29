@@ -173,15 +173,34 @@ body {
 }
 /*768*/
 
-@media (min-width: 768px) and (max-width: 1439px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .sign-up-card-container {
-    height: 600px;
-    width: 800px;
+    height: 500px;
+    width: 700px;
     border-radius: 25px;
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
+  }
+
+  .sign-up-info-container {
+    width: 380px;
+    height: 440px;
+  }
+
+  .sign-up-info-container h1 {
+    position: relative;
+    right: 40px;
+    font-size: 45px;
+  }
+
+  .card-img {
+    width: 280px;
+    height: 20x;
+  }
+  .sign-up-benefits-container li {
+    padding-bottom: 10px;
   }
 }
 

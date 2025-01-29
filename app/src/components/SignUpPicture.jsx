@@ -3,11 +3,11 @@ import signUpIllustrationMobile from "../assets/images/illustration-sign-up-mobi
 import signUpIllustrationDesktop from "../assets/images/illustration-sign-up-desktop.svg";
 
 export const SignUpPicture = () => {
-  const [isMobileView, setIsMobileView] = useState(window.innerWidth <= 842);
+  const [isMobileView, setIsMobileView] = useState(window.innerWidth < 768);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobileView(window.innerWidth <= 800);
+      setIsMobileView(window.innerWidth < 768);
     };
 
     window.addEventListener("resize", handleResize);
