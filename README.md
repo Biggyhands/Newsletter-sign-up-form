@@ -33,7 +33,7 @@ This project implements a newsletter signup form with a responsive design and ba
 - **JavaScript**: Programming language for adding interactivity and logic to the web page.
 - **React:** Library for building the user interface with reusable components.
 
-- **Instructions to Run the Project:**
+  **Instructions to Run the Project:**
 
 1. Clone the repository: `git clone <repository-URL>`
 2. Navigate to the project directory: `cd pokemon-app`
@@ -42,3 +42,14 @@ This project implements a newsletter signup form with a responsive design and ba
 
    
 **Demo**
+
+
+**sign up card*
+
+![image](https://github.com/user-attachments/assets/a605154d-94bc-44b8-9091-5c5274b26888)
+
+
+
+**Success message*
+
+![image](https://github.com/user-attachments/assets/e7e4c4f4-6e5f-42ca-89bb-b2f6fa62fa2d)
