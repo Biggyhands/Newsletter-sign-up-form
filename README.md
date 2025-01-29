@@ -10,7 +10,8 @@ This challenge and the assets used in this repository are **NOT** my original wo
 **Project Description**
 This project implements a newsletter signup form with a responsive design and basic error handling. The main goal was to recreate the challenge proposed by Frontend Mentor to practice my HTML, CSS, and JavaScript skills (if used).
 
-**Features**:
+- **Features**:
+
 **Subcription Form:**  
 -    Allows users to enter their email address.
 -   ludes basic email format validation.
