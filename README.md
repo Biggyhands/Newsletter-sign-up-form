@@ -12,9 +12,9 @@ This project implements a newsletter signup form with a responsive design and ba
 
 **Features**:
 - **Subcription Form:**  
-    -Allows users to enter their email address.
-    -Includes basic email format validation.
-    -Displays a success message upon submitting a valid email.
+-    Allows users to enter their email address.
+-   ludes basic email format validation.
+-  splays a success message upon submitting a valid email.
   
 - **Responsive Design:** 
     -Uses CSS to adapt to different screen sizes (desktop, tablet, and mobile).
