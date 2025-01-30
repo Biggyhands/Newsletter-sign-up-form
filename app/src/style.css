@@ -241,6 +241,10 @@ body {
     height: 842px;
     width: 375px;
   }
+
+  .card-img {
+    width: 100%;
+  }
 }
 
 /*425*/
@@ -267,9 +271,8 @@ body {
   }
 
   .card-img {
-    width: 425px;
+    width: 100%;
   }
-
   .success-message-container {
     height: 842px;
     width: 425px;
