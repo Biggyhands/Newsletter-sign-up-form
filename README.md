@@ -42,7 +42,7 @@ This project implements a newsletter signup form with a responsive design and ba
 4. Run the application: `npm start`
 
 **Demo**
--   **deploy:** [[https://clinquant-centaur-b5f4a1.netlify.app/](https://eclectic-sable-ba6e55.netlify.app/)](https://euphonious-sorbet-a84a64.netlify.app/)
+-   **deploy:** https://euphonious-sorbet-a84a64.netlify.app/
 
 https://github.com/user-attachments/assets/55e89eef-3e54-4c7b-a480-5baa189febb6
 
